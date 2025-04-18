@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Milan Roumimper Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- for icons -->
+</head>
+<body>
+<div class="container">
+    <div id="header-container"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header:', error));
+    </script>
+
+    <main>
+        <p>Hello, my name is Milan Roumimper.</p>
+        <p>I am a 3rd year game design student from The Netherlands</p>
+    </main>
+
+    <div class="social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:someone@example.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+    </div>
+
+    <div class="footer-links">
+        <a href="#" class="play">play</a>
+        <a href="#" class="download">download</a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About-Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about-me-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js"></script>
+</head>
+<div id="header-container"></div>
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+</script>
+<body>
+
+<canvas id="world"></canvas>
+
+<div class="container">
+    <header>
+        <h1>Milan Roumimper</h1>
+        <p>Creative Media & Game Technologies Student</p>
+    </header>
+
+    <section class="bio">
+        <p>
+            I'm a digital creator passionate about blending technology and storytelling.
+        </p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Unity & C#</li>
+            <li>C++</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>JetBrains Rider</li>
+            <li>Creative Coding</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:milanroumimper@gmail.com">milanroumimper@gmail.com</a></p>
+        <p>Website: <a href="https://milrou.wixsite.com/milan-roumimper" target="_blank">milrou.wixsite.com/milan-roumimper</a></p>
+    </section>
+</div>
+
+<script src="about-me-physics.js"></script>
+</body>
+</html>
