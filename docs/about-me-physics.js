@@ -48,7 +48,7 @@ const avatar = Bodies.circle(200, 100, 75, {
     collisionFilter: { category: 0x0001 },
     render: {
         sprite: {
-            texture: 'assets/me-picture.png',
+            texture: '../assets/me-picture.png',
             xScale: 0.3,
             yScale: 0.3
         }

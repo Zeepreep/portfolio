@@ -1,2 +1,1 @@
-# portfolio
-The website used to host my portfolio
+https://zeepreep.github.io/portfolio/
